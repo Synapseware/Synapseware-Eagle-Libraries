@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.0.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -964,6 +964,39 @@ Narrow 8-Lead Plastic Small Outline</description>
 <wire x1="-1.724" y1="-0.74" x2="-1.724" y2="-1.464" width="0.127" layer="21"/>
 <wire x1="-1.724" y1="-1.464" x2="-1.474" y2="-1.714" width="0.127" layer="21"/>
 </package>
+<package name="QFN-16">
+<description>QFN-16 SMD Package</description>
+<smd name="2" x="-0.2" y="2.19" dx="0.7" dy="0.2" layer="1"/>
+<smd name="5" x="-1.31" y="0.2" dx="0.7" dy="0.2" layer="1" rot="R270"/>
+<smd name="6" x="-1.91" y="0.2" dx="0.7" dy="0.2" layer="1" rot="R270"/>
+<smd name="7" x="-2.51" y="0.2" dx="0.7" dy="0.2" layer="1" rot="R270"/>
+<smd name="8" x="-3.11" y="0.2" dx="0.7" dy="0.2" layer="1" rot="R270"/>
+<smd name="16" x="-1.31" y="3.8" dx="0.7" dy="0.2" layer="1" rot="R270"/>
+<smd name="15" x="-1.91" y="3.8" dx="0.7" dy="0.2" layer="1" rot="R270"/>
+<smd name="14" x="-2.5" y="3.8" dx="0.7" dy="0.2" layer="1" rot="R270"/>
+<smd name="13" x="-3.11" y="3.8" dx="0.7" dy="0.2" layer="1" rot="R270"/>
+<smd name="3" x="-0.2" y="1.59" dx="0.7" dy="0.2" layer="1"/>
+<wire x1="-0.513" y1="4.185" x2="-4.58" y2="4.183" width="0.05" layer="51"/>
+<wire x1="-4.58" y1="4.183" x2="-4.58" y2="-0.18" width="0.05" layer="51"/>
+<wire x1="-4.58" y1="-0.18" x2="0.18" y2="-0.18" width="0.05" layer="51"/>
+<wire x1="0.18" y1="-0.18" x2="0.18" y2="3.49" width="0.05" layer="51"/>
+<wire x1="0.18" y1="3.49" x2="-0.51" y2="4.18" width="0.05" layer="51"/>
+<wire x1="-0.86" y1="0.05" x2="-0.05" y2="0.05" width="0.127" layer="21"/>
+<wire x1="-0.05" y1="0.05" x2="-0.05" y2="0.55" width="0.127" layer="21"/>
+<wire x1="-0.05" y1="3.25" x2="-0.05" y2="3.29" width="0.127" layer="21"/>
+<wire x1="-0.05" y1="3.29" x2="-0.72" y2="3.95" width="0.127" layer="21"/>
+<wire x1="-0.72" y1="3.95" x2="-0.86" y2="3.95" width="0.127" layer="21"/>
+<wire x1="-3.55" y1="3.95" x2="-4.35" y2="3.95" width="0.127" layer="21"/>
+<wire x1="-4.35" y1="3.95" x2="-4.35" y2="3.24" width="0.127" layer="21"/>
+<wire x1="-4.35" y1="0.56" x2="-4.35" y2="0.05" width="0.127" layer="21"/>
+<wire x1="-4.35" y1="0.05" x2="-3.55" y2="0.05" width="0.127" layer="21"/>
+<smd name="4" x="-0.2" y="0.99" dx="0.7" dy="0.2" layer="1"/>
+<smd name="1" x="-0.2" y="2.79" dx="0.7" dy="0.2" layer="1"/>
+<smd name="11" x="-4.2" y="2.19" dx="0.7" dy="0.2" layer="1"/>
+<smd name="10" x="-4.2" y="1.59" dx="0.7" dy="0.2" layer="1"/>
+<smd name="9" x="-4.2" y="0.99" dx="0.7" dy="0.2" layer="1"/>
+<smd name="12" x="-4.2" y="2.79" dx="0.7" dy="0.2" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="AT25DF321">
@@ -1738,30 +1771,30 @@ of the 1.2-V, 1.5-V, 1.8-V, 2.5-V, 3.3-V, and 5-V voltage nodes.
 When the output-enable (OE) input is low, all outputs are placed in the high-impedance state.
 To ensure the high-impedance state during power up or power down, OE should be tied to GND through a
 pulldown resistor; the minimum value of the resistor is determined by the current-sourcing capability of the driver.</description>
-<wire x1="-12.7" y1="22.86" x2="12.7" y2="22.86" width="0.254" layer="94"/>
-<wire x1="12.7" y1="22.86" x2="12.7" y2="-33.02" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-33.02" x2="-12.7" y2="-33.02" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-33.02" x2="-12.7" y2="22.86" width="0.254" layer="94"/>
-<pin name="VCCA" x="-7.62" y="27.94" length="middle" rot="R270"/>
-<pin name="VCCB" x="7.62" y="27.94" length="middle" rot="R270"/>
-<pin name="GND" x="0" y="-38.1" length="middle" rot="R90"/>
-<pin name="A1" x="-17.78" y="12.7" length="middle"/>
-<pin name="A2" x="-17.78" y="7.62" length="middle"/>
-<pin name="A3" x="-17.78" y="2.54" length="middle"/>
-<pin name="A4" x="-17.78" y="-2.54" length="middle"/>
-<pin name="A5" x="-17.78" y="-7.62" length="middle"/>
-<pin name="A6" x="-17.78" y="-12.7" length="middle"/>
-<pin name="A7" x="-17.78" y="-17.78" length="middle"/>
-<pin name="A8" x="-17.78" y="-22.86" length="middle"/>
-<pin name="B1" x="17.78" y="12.7" length="middle" rot="R180"/>
-<pin name="B2" x="17.78" y="7.62" length="middle" rot="R180"/>
-<pin name="B3" x="17.78" y="2.54" length="middle" rot="R180"/>
-<pin name="B4" x="17.78" y="-2.54" length="middle" rot="R180"/>
-<pin name="B5" x="17.78" y="-7.62" length="middle" rot="R180"/>
-<pin name="B6" x="17.78" y="-12.7" length="middle" rot="R180"/>
-<pin name="B7" x="17.78" y="-17.78" length="middle" rot="R180"/>
-<pin name="B8" x="17.78" y="-22.86" length="middle" rot="R180"/>
-<pin name="OE" x="-17.78" y="-30.48" length="middle"/>
+<wire x1="-7.62" y1="17.78" x2="7.62" y2="17.78" width="0.254" layer="94"/>
+<wire x1="7.62" y1="17.78" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="17.78" width="0.254" layer="94"/>
+<pin name="VCCA" x="-5.08" y="22.86" length="middle" rot="R270"/>
+<pin name="VCCB" x="5.08" y="22.86" length="middle" rot="R270"/>
+<pin name="GND" x="0" y="-17.78" length="middle" rot="R90"/>
+<pin name="A1" x="-12.7" y="12.7" length="middle"/>
+<pin name="A2" x="-12.7" y="10.16" length="middle"/>
+<pin name="A3" x="-12.7" y="7.62" length="middle"/>
+<pin name="A4" x="-12.7" y="5.08" length="middle"/>
+<pin name="A5" x="-12.7" y="2.54" length="middle"/>
+<pin name="A6" x="-12.7" y="0" length="middle"/>
+<pin name="A7" x="-12.7" y="-2.54" length="middle"/>
+<pin name="A8" x="-12.7" y="-5.08" length="middle"/>
+<pin name="B1" x="12.7" y="12.7" length="middle" rot="R180"/>
+<pin name="B2" x="12.7" y="10.16" length="middle" rot="R180"/>
+<pin name="B3" x="12.7" y="7.62" length="middle" rot="R180"/>
+<pin name="B4" x="12.7" y="5.08" length="middle" rot="R180"/>
+<pin name="B5" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="B6" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="B7" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="B8" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<pin name="OE" x="-12.7" y="-7.62" length="middle"/>
 </symbol>
 <symbol name="RFM12B">
 <description>The RFM12B is a great inexpensive option for wireless communication; it's an ISM band FSK transceiver module implemented with a unique PLL. These modules operate in the 434MHZ band and fully comply with FCC and ETSI regulations.
@@ -1897,6 +1930,158 @@ ponent count.</description>
 <pin name="LED" x="17.78" y="0" length="middle" rot="R180"/>
 <pin name="CAP" x="17.78" y="-10.16" length="middle" rot="R180"/>
 <pin name="SW" x="17.78" y="10.16" length="middle" rot="R180"/>
+</symbol>
+<symbol name="GTL2003">
+</symbol>
+<symbol name="FT200XD">
+<description>Future Technology Devices
+International Ltd.
+FT201X
+(USB I2C SLAVE IC)
+The FT201X is a USB to I
+2C interface
+with the following advanced features:
+ Single chip USB to I
+2C slave interface.
+ Up to 3.4MHz, high speed mode, I2C supported
+ Entire USB protocol handled on the chip. No
+USB specific firmware programming required.
+ Fully integrated 2048 byte multi-timeprogrammable
+(MTP) memory, storing device
+descriptors and CBUS I/O configuration.
+ Fully integrated clock generation with no
+external crystal required plus optional clock
+output selection enabling a glue-less interface
+to external MCU or FPGA.
+ 512 byte receive buffer and 512 byte transmit
+buffer utilising buffer smoothing technology to
+allow for high data throughput.
+ FTDI’s royalty-free Virtual Com Port (VCP) and
+Direct (D2XX) drivers eliminate the
+requirement for USB driver development in
+most cases.
+ Configurable CBUS I/O pins.
+ Transmit and receive LED drive signals.
+ USB Battery Charger Detection. Allows for USB
+peripheral devices to detect the presence of a
+higher power source to enable improved
+charging.
+ Device supplied pre-programmed with unique
+USB serial number.
+ USB Power Configurations; supports buspowered,
+self-powered and bus-powered with
+power switching.
+ Integrated +3.3V level converter for USB I/O.
+ True 3.3V CMOS drive output and TTL input;
+Operates down to 1V8 with external pull-ups.
+Tolerant of 5V input.
+ Configurable I/O pin output drive strength; 4
+mA (min) and 16 mA (max).
+ Integrated power-on-reset circuit.
+ Fully integrated AVCC supply filtering - no
+external filtering required.
+ + 5V Single Supply Operation.
+ Internal 3V3/1V8 LDO regulators
+ Low operating and USB suspend current; 8mA
+(active-typ) and 125uA (suspend-typ).
+ UHCI/OHCI/EHCI host controller compatible.
+ USB 2.0 Full Speed compatible.
+ Extended operating temperature range; -40 to
+85⁰C.
+ Available in compact Pb-free 16 Pin SSOP and
+QFN packages (both RoHS compliant).</description>
+<wire x1="-17.78" y1="12.7" x2="17.78" y2="12.7" width="0.254" layer="94"/>
+<wire x1="17.78" y1="12.7" x2="17.78" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-12.7" x2="-17.78" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-12.7" x2="-17.78" y2="12.7" width="0.254" layer="94"/>
+<pin name="VCC" x="-2.54" y="17.78" length="middle" rot="R270"/>
+<pin name="VCCIO" x="2.54" y="17.78" length="middle" rot="R270"/>
+<pin name="SCL" x="22.86" y="10.16" length="middle" rot="R180"/>
+<pin name="SDA" x="22.86" y="5.08" length="middle" rot="R180"/>
+<pin name="CBUS0" x="22.86" y="-10.16" length="middle" rot="R180"/>
+<pin name="GND" x="0" y="-17.78" length="middle" rot="R90"/>
+<pin name="/RESET" x="-22.86" y="-10.16" length="middle"/>
+<pin name="3V3OUT" x="-22.86" y="10.16" length="middle"/>
+<pin name="USBDM" x="-22.86" y="2.54" length="middle"/>
+<pin name="USBDP" x="-22.86" y="-2.54" length="middle"/>
+</symbol>
+<symbol name="FT201X">
+<description>Future Technology Devices
+International Ltd.
+FT201X
+(USB I2C SLAVE IC)
+The FT201X is a USB to I
+2C interface
+with the following advanced features:
+ Single chip USB to I
+2C slave interface.
+ Up to 3.4MHz, high speed mode, I2C supported
+ Entire USB protocol handled on the chip. No
+USB specific firmware programming required.
+ Fully integrated 2048 byte multi-timeprogrammable
+(MTP) memory, storing device
+descriptors and CBUS I/O configuration.
+ Fully integrated clock generation with no
+external crystal required plus optional clock
+output selection enabling a glue-less interface
+to external MCU or FPGA.
+ 512 byte receive buffer and 512 byte transmit
+buffer utilising buffer smoothing technology to
+allow for high data throughput.
+ FTDI’s royalty-free Virtual Com Port (VCP) and
+Direct (D2XX) drivers eliminate the
+requirement for USB driver development in
+most cases.
+ Configurable CBUS I/O pins.
+ Transmit and receive LED drive signals.
+ USB Battery Charger Detection. Allows for USB
+peripheral devices to detect the presence of a
+higher power source to enable improved
+charging.
+ Device supplied pre-programmed with unique
+USB serial number.
+ USB Power Configurations; supports buspowered,
+self-powered and bus-powered with
+power switching.
+ Integrated +3.3V level converter for USB I/O.
+ True 3.3V CMOS drive output and TTL input;
+Operates down to 1V8 with external pull-ups.
+Tolerant of 5V input.
+ Configurable I/O pin output drive strength; 4
+mA (min) and 16 mA (max).
+ Integrated power-on-reset circuit.
+ Fully integrated AVCC supply filtering - no
+external filtering required.
+ + 5V Single Supply Operation.
+ Internal 3V3/1V8 LDO regulators
+ Low operating and USB suspend current; 8mA
+(active-typ) and 125uA (suspend-typ).
+ UHCI/OHCI/EHCI host controller compatible.
+ USB 2.0 Full Speed compatible.
+ Extended operating temperature range; -40 to
+85⁰C.
+ Available in compact Pb-free 16 Pin SSOP and
+QFN packages (both RoHS compliant).</description>
+<wire x1="-17.78" y1="20.32" x2="17.78" y2="20.32" width="0.254" layer="94"/>
+<wire x1="17.78" y1="20.32" x2="17.78" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-20.32" x2="-17.78" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-20.32" x2="-17.78" y2="20.32" width="0.254" layer="94"/>
+<pin name="VCC" x="-2.54" y="25.4" length="middle" rot="R270"/>
+<pin name="VCCIO" x="2.54" y="25.4" length="middle" rot="R270"/>
+<pin name="SCL" x="22.86" y="17.78" length="middle" rot="R180"/>
+<pin name="SDA" x="22.86" y="12.7" length="middle" rot="R180"/>
+<pin name="CBUS0" x="22.86" y="7.62" length="middle" rot="R180"/>
+<pin name="GND" x="-2.54" y="-25.4" length="middle" rot="R90"/>
+<pin name="/RESET" x="-22.86" y="-17.78" length="middle"/>
+<pin name="3V3OUT" x="-22.86" y="17.78" length="middle"/>
+<pin name="USBDM" x="-22.86" y="2.54" length="middle"/>
+<pin name="USBDP" x="-22.86" y="-2.54" length="middle"/>
+<pin name="CBUS1" x="22.86" y="2.54" length="middle" rot="R180"/>
+<pin name="CBUS2" x="22.86" y="-2.54" length="middle" rot="R180"/>
+<pin name="CBUS3" x="22.86" y="-7.62" length="middle" rot="R180"/>
+<pin name="CBUS4" x="22.86" y="-12.7" length="middle" rot="R180"/>
+<pin name="CBUS5" x="22.86" y="-17.78" length="middle" rot="R180"/>
+<pin name="GND1" x="2.54" y="-25.4" length="middle" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2977,6 +3162,66 @@ This module has a wide voltage supply range of 2.2-3.8VDC. An SPI interface is u
 <connect gate="G$1" pin="LED" pad="5"/>
 <connect gate="G$1" pin="SW" pad="3"/>
 <connect gate="G$1" pin="VIN" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FT200XD">
+<gates>
+<gate name="G$1" symbol="FT200XD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DFN-10">
+<connects>
+<connect gate="G$1" pin="/RESET" pad="2"/>
+<connect gate="G$1" pin="3V3OUT" pad="3"/>
+<connect gate="G$1" pin="CBUS0" pad="5"/>
+<connect gate="G$1" pin="GND" pad="9"/>
+<connect gate="G$1" pin="SCL" pad="6"/>
+<connect gate="G$1" pin="SDA" pad="8"/>
+<connect gate="G$1" pin="USBDM" pad="1"/>
+<connect gate="G$1" pin="USBDP" pad="10"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+<connect gate="G$1" pin="VCCIO" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FT201X">
+<description>Future Technology Devices
+International Ltd.
+FT201X
+(USB I2C SLAVE IC)
+The FT201X is a USB to I
+2C interface</description>
+<gates>
+<gate name="G$1" symbol="FT201X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN-16">
+<connects>
+<connect gate="G$1" pin="/RESET" pad="9"/>
+<connect gate="G$1" pin="3V3OUT" pad="8"/>
+<connect gate="G$1" pin="CBUS0" pad="12"/>
+<connect gate="G$1" pin="CBUS1" pad="11"/>
+<connect gate="G$1" pin="CBUS2" pad="5"/>
+<connect gate="G$1" pin="CBUS3" pad="14"/>
+<connect gate="G$1" pin="CBUS4" pad="4"/>
+<connect gate="G$1" pin="CBUS5" pad="15"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="GND1" pad="13"/>
+<connect gate="G$1" pin="SCL" pad="16"/>
+<connect gate="G$1" pin="SDA" pad="2"/>
+<connect gate="G$1" pin="USBDM" pad="7"/>
+<connect gate="G$1" pin="USBDP" pad="6"/>
+<connect gate="G$1" pin="VCC" pad="10"/>
+<connect gate="G$1" pin="VCCIO" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
