@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -38,7 +38,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -997,6 +997,67 @@ Narrow 8-Lead Plastic Small Outline</description>
 <smd name="9" x="-4.2" y="0.99" dx="0.7" dy="0.2" layer="1"/>
 <smd name="12" x="-4.2" y="2.79" dx="0.7" dy="0.2" layer="1"/>
 </package>
+<package name="TO-220-5">
+<pad name="1" x="0" y="0" drill="0.5" shape="long" rot="R90"/>
+<pad name="2" x="1.7" y="0" drill="0.5" shape="long" rot="R90"/>
+<pad name="3" x="3.4" y="0" drill="0.5" shape="long" rot="R90"/>
+<pad name="4" x="5.1" y="0" drill="0.5" shape="long" rot="R90"/>
+<pad name="5" x="6.8" y="0" drill="0.5" shape="long" rot="R90"/>
+<wire x1="-1.5" y1="2" x2="8.25" y2="2" width="0.127" layer="21"/>
+<wire x1="8.25" y1="2" x2="8.25" y2="-1.5" width="0.127" layer="21"/>
+<hole x="0" y="0" drill="0.5"/>
+<hole x="1.7" y="0" drill="0.5"/>
+<hole x="3.4" y="0" drill="0.5"/>
+<hole x="5.1" y="0" drill="0.5"/>
+<hole x="6.8" y="0" drill="0.5"/>
+<wire x1="-1.5" y1="2" x2="-1.5" y2="-0.5" width="0.127" layer="20"/>
+<wire x1="-1.5" y1="-0.5" x2="-0.5" y2="-1.5" width="0.127" layer="20"/>
+</package>
+<package name="PDIP-14">
+<pad name="1" x="0" y="0" drill="0.8" shape="square"/>
+<pad name="2" x="2.54" y="0" drill="0.8"/>
+<pad name="3" x="5.08" y="0" drill="0.8"/>
+<pad name="4" x="7.62" y="0" drill="0.8"/>
+<pad name="5" x="10.16" y="0" drill="0.8"/>
+<pad name="6" x="12.7" y="0" drill="0.8"/>
+<pad name="7" x="15.24" y="0" drill="0.8"/>
+<pad name="8" x="15.24" y="7.62" drill="0.8"/>
+<pad name="9" x="12.7" y="7.62" drill="0.8"/>
+<pad name="10" x="10.16" y="7.62" drill="0.8"/>
+<pad name="11" x="7.62" y="7.62" drill="0.8"/>
+<pad name="12" x="5.08" y="7.62" drill="0.8"/>
+<pad name="13" x="2.54" y="7.62" drill="0.8"/>
+<pad name="14" x="0" y="7.62" drill="0.8"/>
+<wire x1="0" y1="1.27" x2="-1.27" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="2.54" x2="-1.27" y2="6.35" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="6.35" x2="16.51" y2="6.35" width="0.127" layer="21"/>
+<wire x1="16.51" y1="6.35" x2="16.51" y2="1.27" width="0.127" layer="21"/>
+<wire x1="16.51" y1="1.27" x2="0" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="8.89" x2="-1.905" y2="-1.27" width="0.127" layer="51"/>
+<wire x1="-1.905" y1="-1.27" x2="17.145" y2="-1.27" width="0.127" layer="51"/>
+<wire x1="17.145" y1="-1.27" x2="17.145" y2="8.89" width="0.127" layer="51"/>
+<wire x1="17.145" y1="8.89" x2="-1.905" y2="8.89" width="0.127" layer="51"/>
+</package>
+<package name="TO-220-5H">
+<pad name="1" x="0" y="0" drill="0.5" shape="long" rot="R90"/>
+<pad name="2" x="1.7" y="0" drill="0.5" shape="long" rot="R90"/>
+<pad name="3" x="3.4" y="0" drill="0.5" shape="long" rot="R90"/>
+<pad name="4" x="5.1" y="0" drill="0.5" shape="long" rot="R90"/>
+<pad name="5" x="6.8" y="0" drill="0.5" shape="long" rot="R90"/>
+<wire x1="-1.016" y1="-1.27" x2="-1.778" y2="-0.508" width="0.127" layer="20"/>
+<wire x1="-1.778" y1="-0.508" x2="-1.778" y2="17.44" width="0.127" layer="20"/>
+<wire x1="-1.778" y1="17.44" x2="8.89" y2="17.44" width="0.127" layer="20"/>
+<wire x1="8.89" y1="17.44" x2="8.89" y2="-1.27" width="0.127" layer="20"/>
+<pad name="GND" x="3.4" y="14.7" drill="2.8"/>
+<circle x="0" y="2.5" radius="0.1" width="1.27" layer="51"/>
+<rectangle x1="-1" y1="4.5" x2="8" y2="17" layer="1"/>
+<hole x="3.4" y="14.7" drill="0.6"/>
+<hole x="0" y="0" drill="0.5"/>
+<hole x="1.8" y="0" drill="0.5"/>
+<hole x="3.4" y="0" drill="0.5"/>
+<hole x="5.1" y="0" drill="0.5"/>
+<hole x="6.8" y="0" drill="0.5"/>
+</package>
 </packages>
 <symbols>
 <symbol name="AT25DF321">
@@ -1879,7 +1940,7 @@ Built in regulated 5V reference/output to power local logic circuitry/µProcesso
 <pin name="SCK" x="15.24" y="-2.54" length="middle" rot="R180"/>
 <pin name="DI" x="15.24" y="-7.62" length="middle" rot="R180"/>
 </symbol>
-<symbol name="S25FL256">
+<symbol name="S25FLXXX">
 <pin name="/HOLD_IO3" x="20.32" y="-5.08" length="middle" rot="R180"/>
 <pin name="VCC" x="0" y="25.4" length="middle" rot="R270"/>
 <pin name="/RST_RFU" x="20.32" y="-15.24" length="middle" rot="R180"/>
@@ -2082,6 +2143,84 @@ QFN packages (both RoHS compliant).</description>
 <pin name="CBUS4" x="22.86" y="-12.7" length="middle" rot="R180"/>
 <pin name="CBUS5" x="22.86" y="-17.78" length="middle" rot="R180"/>
 <pin name="GND1" x="2.54" y="-25.4" length="middle" rot="R90"/>
+</symbol>
+<symbol name="LM2576XX">
+<wire x1="-12.7" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<pin name="VIN" x="-17.78" y="5.08" length="middle"/>
+<pin name="OUTPUT" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="GND" x="-7.62" y="-12.7" length="middle" rot="R90"/>
+<pin name="FEEDBACK" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="/ON" x="7.62" y="-12.7" length="middle" rot="R90"/>
+</symbol>
+<symbol name="MCP41X1">
+<description>MCP413X/415X
+
+7/8-Bit Single/Dual SPI Digital POT with Volatile Memory</description>
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<pin name="/CS" x="-15.24" y="7.62" length="middle"/>
+<pin name="SCK" x="-15.24" y="2.54" length="middle"/>
+<pin name="SDI/SDO" x="-15.24" y="-2.54" length="middle"/>
+<pin name="VSS" x="-15.24" y="-7.62" length="middle"/>
+<pin name="P0A" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="P0W" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="P0B" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="VDD" x="15.24" y="7.62" length="middle" rot="R180"/>
+</symbol>
+<symbol name="MCP42X1">
+<pin name="/CS" x="-15.24" y="15.24" length="middle"/>
+<pin name="SCK" x="-15.24" y="10.16" length="middle"/>
+<pin name="SDI" x="-15.24" y="5.08" length="middle"/>
+<pin name="VSS" x="-15.24" y="0" length="middle"/>
+<pin name="P1B" x="-15.24" y="-5.08" length="middle"/>
+<pin name="P1W" x="-15.24" y="-10.16" length="middle"/>
+<pin name="P1A" x="-15.24" y="-15.24" length="middle"/>
+<pin name="P0A" x="15.24" y="-15.24" length="middle" rot="R180"/>
+<pin name="P0W" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="P0B" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="NC" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="/SHDN" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="SDO" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="VDD" x="15.24" y="15.24" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="17.78" x2="10.16" y2="17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="17.78" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-17.78" x2="-10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-17.78" x2="-10.16" y2="17.78" width="0.254" layer="94"/>
+</symbol>
+<symbol name="MAX99XX">
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-15.24" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<pin name="RS+" x="-7.62" y="15.24" length="middle" rot="R270"/>
+<pin name="RS-" x="7.62" y="15.24" length="middle" rot="R270"/>
+<pin name="GND" x="5.08" y="-20.32" length="middle" rot="R90"/>
+<pin name="OUT" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="REFIN" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="VCC" x="-15.24" y="2.54" length="middle"/>
+<pin name="/SHDN" x="-15.24" y="-5.08" length="middle"/>
+<pin name="FB" x="-5.08" y="-20.32" length="middle" rot="R90"/>
+</symbol>
+<symbol name="ADS78XX">
+<description>12-Bit High Speed Low Power Sampling
+ANALOG-TO-DIGITAL CONVERTER</description>
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<pin name="IN+" x="-15.24" y="5.08" length="middle"/>
+<pin name="IN-" x="-15.24" y="0" length="middle"/>
+<pin name="VREF" x="-15.24" y="-7.62" length="middle"/>
+<pin name="CLK" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="CONV" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="DATA" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="GND" x="0" y="-15.24" length="middle" rot="R90"/>
+<pin name="VSS" x="0" y="12.7" length="middle" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2930,6 +3069,8 @@ encapsulated in the SOD70 2 in-line leads plastic package.</description>
 </devices>
 </deviceset>
 <deviceset name="TXS0108E">
+<description>8-BIT BIDIRECTIONAL VOLTAGE-LEVEL TRANSLATOR
+FOR OPEN-DRAIN AND PUSH-PULL APPLICATIONS</description>
 <gates>
 <gate name="G$1" symbol="TXS0108E" x="1" y="3"/>
 </gates>
@@ -3014,6 +3155,7 @@ This module has a wide voltage supply range of 2.2-3.8VDC. An SPI interface is u
 </devices>
 </deviceset>
 <deviceset name="23AXXX">
+<description>SPI Serial SRAM with SDI and SQI Interface</description>
 <gates>
 <gate name="G$1" symbol="23CXXX" x="0" y="0"/>
 </gates>
@@ -3051,6 +3193,10 @@ This module has a wide voltage supply range of 2.2-3.8VDC. An SPI interface is u
 </devices>
 </deviceset>
 <deviceset name="W25Q80BV">
+<description>WS2801
+3-Channel Constant Current
+LED Driver With Programmable
+PWM Outputs</description>
 <gates>
 <gate name="G$1" symbol="W25Q80BV" x="0" y="0"/>
 </gates>
@@ -3087,9 +3233,15 @@ This module has a wide voltage supply range of 2.2-3.8VDC. An SPI interface is u
 </device>
 </devices>
 </deviceset>
-<deviceset name="S25FLS256">
+<deviceset name="S25FLSXXX">
+<description>S25FL128S and S25FL256S
+S25FL128S 128 Mbit (16 Mbyte)
+S25FL256S 256 Mbit (32 Mbyte)
+MirrorBit ® Flash Non-Volatile Memory
+CMOS 3.0 Volt Core with Versatile I/O
+Serial Peripheral Interface with Multi-I/O</description>
 <gates>
-<gate name="G$1" symbol="S25FL256" x="0" y="0"/>
+<gate name="G$1" symbol="S25FLXXX" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="WSOIC-16">
@@ -3118,6 +3270,7 @@ This module has a wide voltage supply range of 2.2-3.8VDC. An SPI interface is u
 </devices>
 </deviceset>
 <deviceset name="LTC3490">
+<description>Single Cell 350mA LED Driver</description>
 <gates>
 <gate name="G$1" symbol="LTC3490" x="0" y="0"/>
 </gates>
@@ -3170,6 +3323,7 @@ This module has a wide voltage supply range of 2.2-3.8VDC. An SPI interface is u
 </devices>
 </deviceset>
 <deviceset name="FT200XD">
+<description>USB I2C SLAVE IC</description>
 <gates>
 <gate name="G$1" symbol="FT200XD" x="0" y="0"/>
 </gates>
@@ -3194,9 +3348,7 @@ This module has a wide voltage supply range of 2.2-3.8VDC. An SPI interface is u
 </devices>
 </deviceset>
 <deviceset name="FT201X">
-<description>Future Technology Devices
-International Ltd.
-FT201X
+<description>FT201X
 (USB I2C SLAVE IC)
 The FT201X is a USB to I
 2C interface</description>
@@ -3222,6 +3374,151 @@ The FT201X is a USB to I
 <connect gate="G$1" pin="USBDP" pad="6"/>
 <connect gate="G$1" pin="VCC" pad="10"/>
 <connect gate="G$1" pin="VCCIO" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LM2576XX">
+<description>LM2576xx Series SIMPLE SWITCHER ® 3-A Step-Down Voltage Regulator</description>
+<gates>
+<gate name="G$1" symbol="LM2576XX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="VERTICAL" package="TO-220-5">
+<connects>
+<connect gate="G$1" pin="/ON" pad="5"/>
+<connect gate="G$1" pin="FEEDBACK" pad="4"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="OUTPUT" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="HORIZONTAL" package="TO-220-5H">
+<connects>
+<connect gate="G$1" pin="/ON" pad="5"/>
+<connect gate="G$1" pin="FEEDBACK" pad="4"/>
+<connect gate="G$1" pin="GND" pad="3 GND"/>
+<connect gate="G$1" pin="OUTPUT" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP41X1">
+<description>The MCP41XX and MCP42XX devices offer a wide
+range of product offerings using an SPI interface. This
+family of devices support 7-bit and 8-bit resistor
+networks, and Potentiometer and Rheostat pinouts.</description>
+<gates>
+<gate name="G$1" symbol="MCP41X1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PDIP-8">
+<connects>
+<connect gate="G$1" pin="/CS" pad="1"/>
+<connect gate="G$1" pin="P0A" pad="5"/>
+<connect gate="G$1" pin="P0B" pad="7"/>
+<connect gate="G$1" pin="P0W" pad="6"/>
+<connect gate="G$1" pin="SCK" pad="2"/>
+<connect gate="G$1" pin="SDI/SDO" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="8"/>
+<connect gate="G$1" pin="VSS" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP42X1">
+<gates>
+<gate name="G$1" symbol="MCP42X1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PDIP-14">
+<connects>
+<connect gate="G$1" pin="/CS" pad="1"/>
+<connect gate="G$1" pin="/SHDN" pad="12"/>
+<connect gate="G$1" pin="NC" pad="11"/>
+<connect gate="G$1" pin="P0A" pad="8"/>
+<connect gate="G$1" pin="P0B" pad="10"/>
+<connect gate="G$1" pin="P0W" pad="9"/>
+<connect gate="G$1" pin="P1A" pad="7"/>
+<connect gate="G$1" pin="P1B" pad="5"/>
+<connect gate="G$1" pin="P1W" pad="6"/>
+<connect gate="G$1" pin="SCK" pad="2"/>
+<connect gate="G$1" pin="SDI" pad="3"/>
+<connect gate="G$1" pin="SDO" pad="13"/>
+<connect gate="G$1" pin="VDD" pad="14"/>
+<connect gate="G$1" pin="VSS" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX99XX">
+<description>-20V to +75V Input Range,
+Precision Uni-/Bidirectional,
+Current-Sense Amplifiers</description>
+<gates>
+<gate name="G$1" symbol="MAX99XX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOIC-8" package="POWERSO-8">
+<connects>
+<connect gate="G$1" pin="/SHDN" pad="3"/>
+<connect gate="G$1" pin="FB" pad="6"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+<connect gate="G$1" pin="REFIN" pad="7"/>
+<connect gate="G$1" pin="RS+" pad="1"/>
+<connect gate="G$1" pin="RS-" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADS78XX">
+<description>12-Bit High Speed Low Power Sampling
+ANALOG-TO-DIGITAL CONVERTER
+
+The ADS7818 is a 12-bit sampling analog-to-digital
+converter (A/D) complete with sample/hold, internal
+2.5V reference, and synchronous serial interface. Typi-
+cal power dissipation is 11mW at a 500kHz through-
+put rate. The device can be placed into a power down
+mode which reduces dissipation to just 2.5mW. The
+input range is zero to two times the reference voltage,
+and the internal reference can be overdriven by an
+external voltage.</description>
+<gates>
+<gate name="G$1" symbol="ADS78XX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PDIP-8">
+<connects>
+<connect gate="G$1" pin="CLK" pad="7"/>
+<connect gate="G$1" pin="CONV" pad="5"/>
+<connect gate="G$1" pin="DATA" pad="6"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="IN+" pad="2"/>
+<connect gate="G$1" pin="IN-" pad="3"/>
+<connect gate="G$1" pin="VREF" pad="1"/>
+<connect gate="G$1" pin="VSS" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>
