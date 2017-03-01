@@ -5,7 +5,7 @@ default/
 /_docs
 /_bootloaders
 **.directory
-
+*.orig
 
 #Ignore files produced by Eagle
 *.b#*
