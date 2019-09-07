@@ -2239,6 +2239,21 @@ and the device can be powered from supply voltages as low as 2.7 V.</description
 <pin name="OUT" x="15.24" y="5.08" length="middle" rot="R180"/>
 <pin name="REF" x="15.24" y="-5.08" length="middle" rot="R180"/>
 </symbol>
+<symbol name="MCP6041">
+<description>600 nA, Rail-to-Rail Input/Output Op Amp</description>
+<wire x1="-2.54" y1="3.81" x2="-2.54" y2="-3.81" width="0.254" layer="94"/>
+<pin name="+" x="-5.08" y="2.54" visible="off" length="short" direction="in"/>
+<pin name="-" x="-5.08" y="-2.54" visible="off" length="short" direction="in"/>
+<pin name="VOUT" x="7.62" y="0" visible="off" length="short" direction="out" rot="R180"/>
+<pin name="VSS" x="0" y="-5.08" visible="off" length="short" direction="pwr" rot="R90"/>
+<pin name="VDD" x="0" y="5.08" visible="off" length="short" direction="pwr" rot="R270"/>
+<wire x1="-3.556" y1="4.064" x2="-3.556" y2="3.048" width="0.254" layer="94"/>
+<wire x1="-4.064" y1="3.556" x2="-3.048" y2="3.556" width="0.254" layer="94"/>
+<wire x1="-4.064" y1="-2.032" x2="-3.302" y2="-2.032" width="0.254" layer="94"/>
+<text x="5.08" y="0.508" size="1.016" layer="94">Vout</text>
+<wire x1="5.08" y1="0" x2="-2.54" y2="3.81" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="-2.54" y2="-3.81" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="STCS1">
@@ -3558,6 +3573,38 @@ Voltage-Output, Current-Shunt Monitor</description>
 <connect gate="G$1" pin="OUT" pad="6"/>
 <connect gate="G$1" pin="REF" pad="1"/>
 <connect gate="G$1" pin="V+" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP6041">
+<description>600 nA, Rail-to-Rail Input/Output Op Amp</description>
+<gates>
+<gate name="MCP6041" symbol="MCP6041" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DIP" package="PDIP-8">
+<connects>
+<connect gate="MCP6041" pin="+" pad="3"/>
+<connect gate="MCP6041" pin="-" pad="2"/>
+<connect gate="MCP6041" pin="VDD" pad="7"/>
+<connect gate="MCP6041" pin="VOUT" pad="6"/>
+<connect gate="MCP6041" pin="VSS" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOT-23-5" package="SOT-23-5">
+<connects>
+<connect gate="MCP6041" pin="+" pad="3"/>
+<connect gate="MCP6041" pin="-" pad="4"/>
+<connect gate="MCP6041" pin="VDD" pad="5"/>
+<connect gate="MCP6041" pin="VOUT" pad="1"/>
+<connect gate="MCP6041" pin="VSS" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
