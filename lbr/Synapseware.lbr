@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -466,13 +466,13 @@ Like SOIC-8, but with a heatsink layer</description>
 <smd name="2" x="0" y="-2.8" dx="1.778" dy="0.9144" layer="1" rot="R90"/>
 <smd name="3" x="2.25" y="-2.8" dx="1.778" dy="0.9144" layer="1" rot="R90"/>
 <circle x="-2.5" y="-1.2" radius="0.316225" width="0.127" layer="51"/>
-<wire x1="-2.286" y1="2.54" x2="-2.54" y2="2.54" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="2.54" x2="-3.556" y2="1.524" width="0.127" layer="21"/>
-<wire x1="-3.556" y1="1.524" x2="-3.556" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="-3.556" y1="-2.54" x2="-3.048" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="3.048" y1="-2.54" x2="3.556" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="3.556" y1="-2.54" x2="3.556" y2="2.54" width="0.127" layer="21"/>
-<wire x1="3.556" y1="2.54" x2="2.286" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-2.286" y1="2.286" x2="-2.54" y2="2.286" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="2.286" x2="-3.302" y2="1.524" width="0.127" layer="21"/>
+<wire x1="-3.302" y1="1.524" x2="-3.302" y2="-2.286" width="0.127" layer="21"/>
+<wire x1="-3.302" y1="-2.286" x2="-3.048" y2="-2.286" width="0.127" layer="21"/>
+<wire x1="3.048" y1="-2.286" x2="3.302" y2="-2.286" width="0.127" layer="21"/>
+<wire x1="3.302" y1="-2.286" x2="3.302" y2="2.286" width="0.127" layer="21"/>
+<wire x1="3.302" y1="2.286" x2="2.286" y2="2.286" width="0.127" layer="21"/>
 </package>
 <package name="UMLP-8">
 <description>UMLP-8</description>
@@ -2254,6 +2254,108 @@ and the device can be powered from supply voltages as low as 2.7 V.</description
 <wire x1="5.08" y1="0" x2="-2.54" y2="3.81" width="0.254" layer="94"/>
 <wire x1="5.08" y1="0" x2="-2.54" y2="-3.81" width="0.254" layer="94"/>
 </symbol>
+<symbol name="TLV760/50/33">
+<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<pin name="GND" x="0" y="-10.16" length="middle" rot="R90"/>
+<pin name="OUT" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="IN" x="-12.7" y="2.54" length="middle"/>
+<text x="-7.874" y="5.842" size="1.27" layer="94">TLV760/50/33</text>
+</symbol>
+<symbol name="MIC5201-5.0">
+<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<pin name="GND" x="0" y="-10.16" length="middle" rot="R90"/>
+<pin name="OUT" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="IN" x="-12.7" y="2.54" length="middle"/>
+<text x="-7.874" y="5.842" size="1.27" layer="94">MIC5201</text>
+<pin name="P$1" x="5.08" y="-10.16" visible="off" length="middle" rot="R90"/>
+</symbol>
+<symbol name="DMG2302UK-7">
+<wire x1="-2.032" y1="-1.27" x2="-2.032" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="4.572" x2="-1.27" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="2.54" x2="-1.27" y2="1.778" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.778" x2="-1.27" y2="1.016" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-0.508" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="5.08" x2="-1.27" y2="4.572" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="4.572" x2="1.27" y2="4.572" width="0.254" layer="94"/>
+<wire x1="1.27" y1="4.572" x2="1.27" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-0.508" x2="1.27" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="1.27" y2="1.778" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.778" x2="-1.27" y2="1.778" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.778" x2="0" y2="2.286" width="0.254" layer="94"/>
+<wire x1="0" y1="2.286" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-1.27" y2="1.778" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="3.048" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="3.048" y1="-1.27" x2="3.048" y2="2.286" width="0.254" layer="94"/>
+<wire x1="3.048" y1="2.286" x2="3.048" y2="5.08" width="0.254" layer="94"/>
+<wire x1="3.048" y1="5.08" x2="1.27" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.286" x2="3.048" y2="2.286" width="0.254" layer="94"/>
+<wire x1="3.048" y1="2.286" x2="3.556" y2="2.286" width="0.254" layer="94"/>
+<wire x1="3.048" y1="2.286" x2="2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.27" x2="3.556" y2="1.27" width="0.254" layer="94"/>
+<wire x1="3.556" y1="1.27" x2="3.048" y2="2.286" width="0.254" layer="94"/>
+<pin name="G" x="-7.62" y="-1.27" length="middle"/>
+<pin name="S" x="1.27" y="-5.08" length="middle" rot="R90"/>
+<pin name="D" x="1.27" y="10.16" length="middle" rot="R270"/>
+<wire x1="-2.54" y1="-1.27" x2="-2.032" y2="-1.27" width="0.254" layer="94"/>
+</symbol>
+<symbol name="DMG2305UXQ-7">
+<wire x1="-2.032" y1="-3.81" x2="-2.032" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="2.032" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-0.762" x2="-1.27" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="-1.27" y2="-3.048" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-3.048" x2="-1.27" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="2.54" x2="-1.27" y2="2.032" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="2.032" x2="1.27" y2="2.032" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.032" x2="1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-3.048" x2="1.27" y2="-3.048" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-3.81" x2="1.27" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-0.762" x2="-1.27" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-3.81" x2="3.048" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="3.048" y1="-3.81" x2="3.048" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="3.048" y1="-0.762" x2="3.048" y2="2.54" width="0.254" layer="94"/>
+<wire x1="3.048" y1="2.54" x2="1.27" y2="2.54" width="0.254" layer="94"/>
+<pin name="G" x="-7.62" y="-3.81" length="middle"/>
+<pin name="S" x="1.27" y="-7.62" length="middle" rot="R90"/>
+<pin name="D" x="1.27" y="7.62" length="middle" rot="R270"/>
+<wire x1="-2.54" y1="-3.81" x2="-2.032" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-0.762" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="1.27" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0.508" x2="3.556" y2="0.508" width="0.254" layer="94"/>
+<wire x1="3.556" y1="0.508" x2="3.048" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="3.048" y1="-0.762" x2="2.54" y2="0.508" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-0.762" x2="3.048" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="3.048" y1="-0.762" x2="3.556" y2="-0.762" width="0.254" layer="94"/>
+</symbol>
+<symbol name="UA78MXX">
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<pin name="INPUT" x="-15.24" y="5.08" length="middle"/>
+<pin name="OUTPUT" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="GND" x="0" y="-12.7" length="middle" rot="R90"/>
+</symbol>
+<symbol name="LM2567">
+<description>LM2576xx Series SIMPLE SWITCHER ® 3-A Step-Down Voltage Regulator</description>
+<wire x1="-7.62" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<pin name="VIN" x="-12.7" y="0" length="middle"/>
+<pin name="OUTPUT" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND" x="-5.08" y="-10.16" length="middle" rot="R90"/>
+<pin name="FEEDBACK" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="ON/OFF" x="7.62" y="-10.16" length="middle" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="STCS1">
@@ -3606,6 +3708,105 @@ Voltage-Output, Current-Shunt Monitor</description>
 <connect gate="MCP6041" pin="VOUT" pad="1"/>
 <connect gate="MCP6041" pin="VSS" pad="2"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TLV760XX">
+<gates>
+<gate name="G$1" symbol="TLV760/50/33" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-23-3">
+<connects>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="IN" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MIC5201">
+<description>MIC5201-5.0 5V 200mA LDO Regulator</description>
+<gates>
+<gate name="G$1" symbol="MIC5201-5.0" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-223">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+<connect gate="G$1" pin="P$1" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DMG2302UK">
+<gates>
+<gate name="G$1" symbol="DMG2302UK-7" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="SOT-23-3">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DMG2305UXQ">
+<gates>
+<gate name="G$1" symbol="DMG2305UXQ-7" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-23-3">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="UA78MXX">
+<description>3.3v and 5.0v, 500mA, linear voltage regulators.</description>
+<gates>
+<gate name="G$1" symbol="UA78MXX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-223">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="INPUT" pad="1"/>
+<connect gate="G$1" pin="OUTPUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LM2567">
+<gates>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
