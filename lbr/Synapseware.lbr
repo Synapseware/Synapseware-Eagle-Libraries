@@ -2640,6 +2640,19 @@ Sensor Ic 1mA, 30v</description>
 <wire x1="-4.318" y1="2.032" x2="-3.302" y2="3.048" width="0.254" layer="94"/>
 <wire x1="-3.302" y1="3.048" x2="-5.08" y2="3.81" width="0.254" layer="94"/>
 </symbol>
+<symbol name="LMR14206">
+<description>LMR14206 SIMPLE SWITCHER ® 42Vin, 0.6A Step-Down Voltage Regulator in SOT-23</description>
+<pin name="VIN" x="0" y="12.7" length="middle" rot="R270"/>
+<pin name="GND" x="0" y="-15.24" length="middle" rot="R90"/>
+<pin name="/SHDN" x="-17.78" y="0" length="middle"/>
+<pin name="SW" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="CBOOT" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="FB" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="STCS1">
@@ -4315,6 +4328,26 @@ Vertical DMOS FET</description>
 <connect gate="G$1" pin="D" pad="3"/>
 <connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LMR14206">
+<gates>
+<gate name="G$1" symbol="LMR14206" x="0" y="0"/>
+</gates>
+<devices>
+<device name="TSOT-6" package="TSOT-6">
+<connects>
+<connect gate="G$1" pin="/SHDN" pad="4"/>
+<connect gate="G$1" pin="CBOOT" pad="1"/>
+<connect gate="G$1" pin="FB" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="SW" pad="6"/>
+<connect gate="G$1" pin="VIN" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
