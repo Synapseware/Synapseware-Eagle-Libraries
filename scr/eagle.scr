@@ -2,6 +2,8 @@
 #
 # This file can be used to configure the editor windows.
 
+Assign F2 'Window'
+Assign AF2 'Window fit'
 Assign F3 'Delete';
 Assign AF3 'Grid inch 0.001 on; Grid alt inch 0.01;';
 Assign F4 'Name';
@@ -12,9 +14,15 @@ Assign AF7 'Group';
 Assign F8 'Copy';
 Assign F10 'Grid inch 0.05 on; Grid alt inch 0.005;';
 Assign AF10 'Grid mm 1 on; Grid alt mm 0.1;';
+Assign AC 'Copy'
+Assign AD 'Delete'
+Assign AG 'Group'
+Assign AJ 'Junction'
+Assign AM 'Move'
+Assign AN 'Net'
 
 Grid inch 0.05 on;
-Grid alt inch 0.005;
+Grid alt inch 0.025;
 
 BRD:
 #Menu Add Change Copy Delete Display Grid Group Move Name Quit Rect \
@@ -74,7 +82,9 @@ Assign F10 'Grid inch 0.05 on; Grid alt inch 0.005;';
 Assign AF10 'Grid mm 1 on; Grid alt mm 0.1;';
 
 SCH:
-Grid Default on; #BHW Reset the grid to the standard value
+Grid inch 0.05 on;
+Grid alt inch 0.025;
+
 Change Width 0.006; #BHW Set the 6mil rule
 Set XREF_LABEL_FORMAT %F%N/%S; #BHW Remove row & column from default
 Change XREF ON; #BHW Default to the labels we use (flag border)
@@ -85,9 +95,6 @@ Assign AF9 'Label';
 
 Assign F12 'show';
 Assign AF12 'info';
-
-Grid inch 0.05 on;
-Grid alt inch 0.005;
 
 Change Width 0.008;
 
